@@ -1,4 +1,4 @@
-import Flattener from './flatten-array.js';
+import { Flattener } from './flatten-array.js';
 
 describe('FlattenArray', () => {
   const flattener = new Flattener();
@@ -6,11 +6,11 @@ describe('FlattenArray', () => {
     expect(flattener.flatten([[]])).toEqual([]);
   });
 
-  xtest('undefined values are omitted from the final result', () => {
+  test('undefined values are omitted from the final result', () => {
     expect(flattener.flatten([1, 2, undefined])).toEqual([1, 2]);
   });
 
-  xtest('null values are omitted from the final result', () => {
+  test('null values are omitted from the final result', () => {
     expect(flattener.flatten([1, 2, null])).toEqual([1, 2]);
   });
 
