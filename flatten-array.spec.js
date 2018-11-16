@@ -14,11 +14,11 @@ describe('FlattenArray', () => {
     expect(flattener.flatten([1, 2, null])).toEqual([1, 2]);
   });
 
-  xtest('flattens a 2 level nested list', () => {
+  test('flattens a 2 level nested list', () => {
     expect(flattener.flatten([1, [2, 3, 4], 5])).toEqual([1, 2, 3, 4, 5]);
   });
 
-  xtest('flattens a  3 level nested list', () => {
+  test('flattens a  3 level nested list', () => {
     expect(flattener.flatten([1, [2, 3, 4], 5, [6, [7, 8]]])).toEqual([1, 2, 3, 4, 5, 6, 7, 8]);
   });
 
