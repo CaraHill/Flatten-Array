@@ -1,11 +1,4 @@
 function Flattener() {
-  // this.flatten = (nestedArray) => {
-  //   let flattenedArray = [].concat(...nestedArray);
-  //   return flattenedArray.filter(function(item) {
-  //     return item != undefined || item != null;
-  //   });
-  // }
-
   this.flatten = (nestedArray) => {
     let result = [];
     let stack = nestedArray;
