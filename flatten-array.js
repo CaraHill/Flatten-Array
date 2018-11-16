@@ -10,9 +10,7 @@ function Flattener() {
       else { result.push(item); }
     }
 
-    return result.filter(function(item) {
-      return item != undefined || item != null;
-    });
+    return result.filter(item => item != undefined || item != null);
   }
 }
 
